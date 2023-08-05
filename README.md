@@ -6,7 +6,9 @@
 # 使用方法
 Timer类为定时器类；
 
-注册事件的函数：Timer::Register(const int32_t eventId, const Delegate& delegate, const int32_t interval)
+注册事件的函数：
+
+Timer::Register(const int32_t eventId, const Delegate& delegate, const int32_t interval)
 
 param1(eventId):事件的id;
 
