@@ -14,7 +14,9 @@ param2(delegate):事件的委托;  委托即为：typedef std::function<void()> 
 
 param3(interval)：事件的执行的间隔时间；
 
-注销事件的函数：UnRegister(const int32_t eventId);
+注销事件的函数：
+
+UnRegister(const int32_t eventId);
 
 param(eventId):事件的id;
 
