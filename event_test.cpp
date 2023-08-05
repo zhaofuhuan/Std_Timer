@@ -33,7 +33,9 @@ int main()
     std::this_thread::sleep_for(std::chrono::seconds(30));
     std::function<void()>  test2 = std::bind(&Test::CycleRunRegister, &Test::Instance());
     ExpM::Timer::Instance()->Register(110, test2, 1000);
-    std::this_thread::sleep_for(std::chrono::seconds(30));
+    std::this_thread::sleep_for(std::chrono::seconds(10));
+    ExpM::Timer::Instance()->Stop();
+    std::this_thread::sleep_for(std::chrono::seconds(10));
 
 }
 
